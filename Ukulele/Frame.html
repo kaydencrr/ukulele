@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ukulele Chords</title>
+</head>
+<body>
+	<h2>Search Chord's Diagram</h2>
+		<form action = "" method="post"> 
+			<input type="text" name="chord name"> <button id="sDiagram">Search</button>
+		</form>
+		<img src="chord.jpg" id="resultDiagram" height="12%" width="12%">
+
+	<h2>Search Chord's Name</h2>
+		<form>
+			<p>Starting bar: <input type="text" name="startBar"></p>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>Bar</th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>A</th>
+						<th><input type="radio" name="Bar1Input" id="A1"></th>
+						<th><input type="radio" name="Bar1Input" id="A2"></th>
+						<th><input type="radio" name="Bar1Input" id="A3"></th>
+						<th><input type="radio" name="Bar1Input" id="A4"></th>
+					</tr>
+					<tr>
+						<th>E</th>
+						<th><input type="radio" name="Bar2Input" id="E1"></th>
+						<th><input type="radio" name="Bar2Input" id="E2"></th>
+						<th><input type="radio" name="Bar2Input" id="E3"></th>
+						<th><input type="radio" name="Bar2Input" id="E4"></th>
+					</tr>
+					<tr>
+						<th>C</th>
+						<th><input type="radio" name="Bar3Input" id="C1"></th>
+						<th><input type="radio" name="Bar3Input" id="C2"></th>
+						<th><input type="radio" name="Bar3Input" id="C3"></th>
+						<th><input type="radio" name="Bar3Input" id="C4"></th>
+					</tr>
+					<tr>
+						<th>G</th>
+						<th><input type="radio" name="Bar4Input" id="G1"></th>
+						<th><input type="radio" name="Bar4Input" id="G2"></th>
+						<th><input type="radio" name="Bar4Input" id="G3"></th>
+						<th><input type="radio" name="Bar4Input" id="G4"></th>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<button id="sName">Search</button>
+	<div>
+		<h1>Chord's List </h1>
+		<p>Select Root note</p>
+			<form>
+
+				<label for="rootA">A</label>
+				<input type="radio" name="chordList" id="rootA" onclick="toggle()"> 
+				<label for="rootA#">A#</label>
+				<input type="radio" name="chordList" id="rootA#" onclick="toggle()">
+				<label for="rootB">B</label>
+				<input type="radio" name="chordList" id="rootB" onclick="toggle()">
+				<label for="rootC">C</label>
+				<input type="radio" name="chordList" id="rootC" onclick="toggle()">
+				<label for="rootC#">C#</label>
+				<input type="radio" name="chordList" id="rootC#" onclick="toggle()">
+				<label for="rootD">D</label>
+				<input type="radio" name="chordList" id="rootD" onclick="toggle()">
+				<label for="rootD#">D#</label>
+				<input type="radio" name="chordList" id="rootD#" onclick="toggle()">
+				<label for="rootE">E</label>
+				<input type="radio" name="chordList" id="rootE" onclick="toggle()">
+				<label for="rootF">F</label>
+				<input type="radio" name="chordList" id="rootF" onclick="toggle()">
+				<label for="rootF#">F#</label>
+				<input type="radio" name="chordList" id="rootF#" onclick="toggle()">
+				<label for="rootG">G</label>
+				<input type="radio" name="chordList" id="rootG" onclick="toggle()">
+				<label for="rootG#">G#</label>
+				<input type="radio" name="chordList" id="rootG#" onclick="toggle()">
+			</form>
+		<!-- A chord -->
+			<div id="showA">
+				<p>CHORD A</p>
+				<div>
+					<p>TRIAD</p>
+					<img src="chordA.jpg" height="12%" width="12%">
+					<img src="chordAm.jpg" height="12%" width="12%">
+					<img src="chordAaug.jpg" height="12%" width="12%">
+					<img src="chordAdim.jpg" height="12%" width="12%">
+				</div>
+				<div>
+					<p>SEVENTH</p>
+					<img src="chordA7.jpg" height="12%" width="12%">
+					<img src="chordAm7.jpg" height="12%" width="12%">
+					<img src="chordAmaj7.jpg" height="12%" width="12%">
+					<img src="chordAaug7.jpg" height="12%" width="12%">
+					<img src="chordAdim7.jpg" height="12%" width="12%">
+					<img src="chordAm7b5.jpg" height="12%" width="12%">
+				</div>
+		<!-- As chord -->
+			</div>
+			<div id="showA#">
+				<p>CHORD A#</p>
+				<div>
+					<p>TRIAD</p>
+					<img src="chordAs.jpg" height="12%" width="12%">
+					<img src="chordAsm.jpg" height="12%" width="12%">
+					<img src="chordAsaug.jpg" height="12%" width="12%">
+					<img src="chordAsdim.jpg" height="12%" width="12%">
+				</div>
+				<div>
+					<p>SEVENTH</p>
+					<img src="chordAs7.jpg" height="12%" width="12%">
+					<img src="chordAsm7.jpg" height="12%" width="12%">
+					<img src="chordAsmaj7.jpg" height="12%" width="12%">
+					<img src="chordAsaug7.jpg" height="12%" width="12%">
+					<img src="chordAsdim7.jpg" height="12%" width="12%">
+					<img src="chordAsm7b5.jpg" height="12%" width="12%">
+				</div>
+			</div>
+		<!-- B chord -->
+			<div id="showB">
+				<p>CHORD B</p>
+				<div>
+					<p>TRIAD</p>
+					<img src="chordB.jpg" height="12%" width="12%">
+					<img src="chordBm.jpg" height="12%" width="12%">
+					<img src="chordBaug.jpg" height="12%" width="12%">
+					<img src="chordBdim.jpg" height="12%" width="12%">
+				</div>
+				<div>
+					<p>SEVENTH</p>
+					<img src="chordB7.jpg" height="12%" width="12%">
+					<img src="chordBm7.jpg" height="12%" width="12%">
+					<img src="chordBmaj7.jpg" height="12%" width="12%">
+					<img src="chordBaug7.jpg" height="12%" width="12%">
+					<img src="chordBdim7.jpg" height="12%" width="12%">
+					<img src="chordBm7b5.jpg" height="12%" width="12%">
+				</div>
+		<!-- C chord -->
+			<div id="showC">
+				<p>CHORD C</p>
+				<div>
+					<p>TRIAD</p>
+					<img src="chordC.jpg" height="12%" width="12%">
+					<img src="chordCm.jpg" height="12%" width="12%">
+					<img src="chordCaug.jpg" height="12%" width="12%">
+					<img src="chordCdim.jpg" height="12%" width="12%">
+				</div>
+				<div>
+					<p>SEVENTH</p>
+					<img src="chordC7.jpg" height="12%" width="12%">
+					<img src="chordCm7.jpg" height="12%" width="12%">
+					<img src="chordCmaj7.jpg" height="12%" width="12%">
+					<img src="chordCaug7.jpg" height="12%" width="12%">
+					<img src="chordCdim7.jpg" height="12%" width="12%">
+					<img src="chordCm7b5.jpg" height="12%" width="12%">
+				</div>
+			</div>
+		<!-- Cs chord -->
+			<div id="showC#">
+				<p>CHORD C#</p>
+				<div>
+					<p>TRIAD</p>
+					<img src="chordCs.jpg" height="12%" width="12%">
+					<img src="chordCsm.jpg" height="12%" width="12%">
+					<img src="chordCsaug.jpg" height="12%" width="12%">
+					<img src="chordCsdim.jpg" height="12%" width="12%">
+				</div>
+				<div>
+					<p>SEVENTH</p>
+					<img src="chordCs7.jpg" height="12%" width="12%">
+					<img src="chordCsm7.jpg" height="12%" width="12%">
+					<img src="chordCsmaj7.jpg" height="12%" width="12%">
+					<img src="chordCsaug7.jpg" height="12%" width="12%">
+					<img src="chordCsdim7.jpg" height="12%" width="12%">
+					<img src="chordCsm7b5.jpg" height="12%" width="12%">
+				</div>
+			</div>			
+		<!-- D Chord -->
+			<div id="showD">
+				<p>CHORD D</p>
+				<div>
+					<p>TRIAD</p>
+					<img src="chordD.jpg" height="12%" width="12%">
+					<img src="chordDm.jpg" height="12%" width="12%">
+					<img src="chordDaug.jpg" height="12%" width="12%">
+					<img src="chordDdim.jpg" height="12%" width="12%">
+				</div>
+				<div>
+					<p>SEVENTH</p>
+					<img src="chordD7.jpg" height="12%" width="12%">
+					<img src="chordDm7.jpg" height="12%" width="12%">
+					<img src="chordDmaj7.jpg" height="12%" width="12%">
+					<img src="chordDaug7.jpg" height="12%" width="12%">
+					<img src="chordDdim7.jpg" height="12%" width="12%">
+					<img src="chordDm7b5.jpg" height="12%" width="12%">
+				</div>
+		<!-- Ds chord -->
+			</div>
+	</div>
+	<script type="text/javascript" src="Database.js"></script>
+</body>
+</html>
